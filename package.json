@@ -1,0 +1,27 @@
+{
+  "name": "minin-learn_nodejs",
+  "version": "1.0.0",
+  "description": "Изучаем Ноду",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gumerov-Marat/minin-learn_NODEJS.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js"
+  ],
+  "author": "Gumerov marat <gumerovm74@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gumerov-Marat/minin-learn_NODEJS/issues"
+  },
+  "homepage": "https://github.com/Gumerov-Marat/minin-learn_NODEJS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
