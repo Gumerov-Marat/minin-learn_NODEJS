@@ -1,0 +1,17 @@
+Команды:
+- node
+войти в ноду
+- .exit
+выход
+
+расширения для курса
+Auto Close Tag
+Auto Rename Tag
+Bracket Pair Colorizer
+CSS Peack
+EditorConfig
+IntelliSense for CSS class names in HTML
+Open in brousers
+path IntelliSense
+vscode-icons
+Vetur
