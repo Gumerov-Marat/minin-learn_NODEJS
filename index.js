@@ -1,8 +1,11 @@
-const userObj = require('./user')
-console.log(userObj);
-console.log('Node index для запуска');
+const http = require ('http')
 
-console.log(obj.user);
+const server = http.createServer((req, res) => {
+  console.log(req.url);
+  res.write('Hello JS')
+  res.end()
+})
 
-obj.sayHello()
-
+server.listen(3000, () => {
+  console.log('server is running');
+})
