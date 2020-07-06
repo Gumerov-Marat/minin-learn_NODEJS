@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/Gumerov-Marat/minin-learn_NODEJS#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
