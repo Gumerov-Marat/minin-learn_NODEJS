@@ -2,6 +2,9 @@ const express = require ('express')
 const path = require('path')
 const exphbs = require('express-handlebars')
 const { extname } = require('path')
+const homeRoutes = require('./routes/home')
+const addRoutes = require('./routes/add')
+const coursesRoutes = require('./routes/course')
 //(1)Создание сервера
 const app = express()
 
@@ -23,27 +26,10 @@ app.set('views', 'views')
 
 //подключили папку паблик ( со стилями)
 app.use(express.static('public'))
+app.use('/', homeRoutes)
+app.use('/add', addRoutes)
+app.use('/courses', coursesRoutes)
 
-
-//гет запросы
-app.get('/', (req, res) => {
-  res.render('index', {
-    title: 'Главная страница',
-    isHome: true
-  })
-})
-app.get('/add', (req, res) => {
-  res.render('add', {
-    title: 'Добавить курс',
-    isAdd: true
-  })
-})
-app.get('/courses', (req, res) => {
-  res.render('courses', {
-    title: 'Курсы',
-    isCourses: true
-  })
-})
 
 app.get('/about', (req, res) => {
   /*
@@ -51,13 +37,6 @@ app.get('/about', (req, res) => {
   */
  res.render('about')
 })
-
-
-
-
-
-
-
 
 
 
