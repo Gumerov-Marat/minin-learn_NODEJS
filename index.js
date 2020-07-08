@@ -26,6 +26,7 @@ app.set('views', 'views')
 
 //подключили папку паблик ( со стилями)
 app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}))
 app.use('/', homeRoutes)
 app.use('/add', addRoutes)
 app.use('/courses', coursesRoutes)
